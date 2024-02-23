@@ -1,0 +1,88 @@
+<html>
+<head>
+<title>Details</title>
+<link rel="stylesheet" href="html3.css">
+</head>
+<body>
+<br>
+<h1>Step1:Your Details</h1>
+
+<table border=1>
+<tr>
+<td><h2>Name:<center><input type="text" placeholder="First Name and Last Name" id="A1"></center></h2></td><br> 
+</tr>
+<tr>
+<td><h2>Email:<center><input type="text" placeholder="example@domain.com" id="A2"></center></h2></td><br>
+</tr>
+<tr>
+<td><h2>Phone:<center><input type:"text" placeholder="0123456789" id="A3"></center></h2></td><br>
+</tr>
+</table>
+<h1>Step 2:Delivery Address</h1>
+<table border=1>
+<tr>
+<td><h2>Address:<center> <textarea style=size:90% id="A4"></textarea></center></h2></td>
+</tr>
+<tr>
+<td><h2>Post Code:<center><input type:"text" ID="A5"></center></h2></td>
+</tr>
+<tr>
+<td><h2>Country<center><input typt="text" ID="A6"></center></h2></td>
+</tr>
+</table>
+<h1>Step 3:Card Details</h1>
+<table border="1">
+<tr>
+<td><h2>Card Type</br><input type="radio" name="d" ID="A7">VISA<input type="radio" name="d" ID="A7">Mastercard</h2></td>
+</tr>
+<tr>
+<td><h2>Card Number:<center><input type='text' ID="A8"></center></h2></td>
+</tr>
+<tr>
+<td><h2>Security code<center><input type="text" ID="A9"></center></h2></td>
+</tr>
+<tr>
+<td><h2>Name on the card:<center><input type='text' placeholder="Exact name on the card" ID="A10"></center></h2></td>
+</tr>
+</table>
+<br>
+<center><button onclick="displayinput()">BUY IT!</button></center>
+<P ID="P1"></P>
+<p id="P2"></p>
+<P ID="P3"></P>
+<P ID="P4"></P>
+<P ID="P5"></P>
+<P ID="P6"></P>
+<P ID="P7"></P>
+<P ID="P8"></P>
+<P ID="P9"></P>
+<P ID="P10"></P>
+<script>
+    function displayinput()
+    {
+        var a=document.getElementById('A1').value;
+        document.getElementById('P1').innerHTML=a
+        var b=document.getElementById('A2').value;
+        document.getElementById('P2').innerHTML=b
+        var c=document.getElementById('A3').value;
+        document.getElementById('P3').innerHTML=c
+        var d=document.getElementById('A4').value;
+        document.getElementById('P4').innerHTML=d
+        var e=document.getElementById('A5').value;
+        document.getElementById('P5').innerHTML=e
+        var f=document.getElementById('A6').value;
+        document.getElementById('P6').innerHTML=f
+        var g=document.getElementById('A7').value;
+        document.getElementById('P7').innerHTML=g
+        var h=document.getElementById('A8').value;
+        document.getElementById('P8').innerHTML=h
+        var i=document.getElementById('A9').value;
+        document.getElementById('P9').innerHTML=i
+        var j=document.getElementById('A10').value;
+        document.getElementById('P10').innerHTML=j
+
+    }
+</script>
+
+</body>
+</html>
